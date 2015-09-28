@@ -24,53 +24,158 @@
                                     <constraint firstAttribute="width" secondItem="8gE-JD-fCN" secondAttribute="height" multiplier="1:1" id="UPg-A0-aaX"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8I-Ux-19r" userLabel="bottom left">
-                                <rect key="frame" x="20" y="430" width="124" height="124.5"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYO-bQ-wxI" userLabel="bottom center">
                                 <rect key="frame" x="144" y="430" width="124.5" height="124.5"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwA-qr-YVz" userLabel="bottom right">
-                                <rect key="frame" x="268.5" y="430" width="124" height="124.5"/>
-                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xpos">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ypos">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="marked" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XCf-s4-xIV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDO-VB-UDj" userLabel="center left">
                                 <rect key="frame" x="20" y="306" width="124" height="124"/>
-                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xpos">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ypos">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="marked" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hyq-O1-piW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIK-nG-cNG" userLabel="center right">
+                                <rect key="frame" x="268" y="306" width="124" height="124"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xpos">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ypos">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="marked" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xZ5-dR-Rm1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhC-XA-gFr" userLabel="top left">
+                                <rect key="frame" x="20" y="181" width="124" height="124.5"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="marked" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xpos">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ypos">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4j-5C-ItB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8M6-tv-Y4X" userLabel="top right">
+                                <rect key="frame" x="268" y="181" width="124" height="124.5"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="marked" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xpos">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ypos">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XcW-Sz-ssB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fD1-FQ-9T6" userLabel="center center">
                                 <rect key="frame" x="144" y="306" width="124.5" height="124"/>
-                                <color key="backgroundColor" red="0.1199243255" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIK-nG-cNG" userLabel="center right">
-                                <rect key="frame" x="268.5" y="306" width="124" height="124"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhC-XA-gFr" userLabel="top left">
-                                <rect key="frame" x="20" y="181.5" width="124" height="124.5"/>
-                                <color key="backgroundColor" red="0.22975081929999999" green="0.44819148440000001" blue="0.46283143939999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="marked" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xpos">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ypos">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9uB-ms-EvY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwA-qr-YVz" userLabel="bottom right">
+                                <rect key="frame" x="268" y="430" width="124" height="124.5"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xpos">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ypos">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="marked" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y1v-Lf-4pf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8I-Ux-19r" userLabel="bottom left">
+                                <rect key="frame" x="20" y="430" width="124" height="124.5"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xpos">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ypos">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="marked" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mR3-2d-ra9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apo-GP-ZKt" userLabel="top center">
-                                <rect key="frame" x="144" y="181.5" width="124.5" height="124.5"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="144" y="181" width="124.5" height="124.5"/>
                                 <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8M6-tv-Y4X" userLabel="top right">
-                                <rect key="frame" x="268.5" y="181.5" width="124" height="124.5"/>
-                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="marked" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xpos">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ypos">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="77M-6O-yJL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
