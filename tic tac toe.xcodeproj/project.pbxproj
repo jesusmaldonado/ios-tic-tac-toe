@@ -14,6 +14,11 @@
 		70D7D1C81BB8975700DE4FC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D7D1C61BB8975700DE4FC2 /* LaunchScreen.storyboard */; };
 		70D7D1D31BB8975700DE4FC2 /* tic_tac_toeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D7D1D21BB8975700DE4FC2 /* tic_tac_toeTests.swift */; };
 		70D7D1DE1BB8975700DE4FC2 /* tic_tac_toeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D7D1DD1BB8975700DE4FC2 /* tic_tac_toeUITests.swift */; };
+		70D7D1EF1BB899AD00DE4FC2 /* black-cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7D1EB1BB899AD00DE4FC2 /* black-cross.png */; settings = {ASSET_TAGS = (); }; };
+		70D7D1F01BB899AD00DE4FC2 /* black-nought.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7D1EC1BB899AD00DE4FC2 /* black-nought.png */; settings = {ASSET_TAGS = (); }; };
+		70D7D1F11BB899AD00DE4FC2 /* white-cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7D1ED1BB899AD00DE4FC2 /* white-cross.png */; settings = {ASSET_TAGS = (); }; };
+		70D7D1F21BB899AD00DE4FC2 /* white-nought.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7D1EE1BB899AD00DE4FC2 /* white-nought.png */; settings = {ASSET_TAGS = (); }; };
+		70D7D1F41BB89A2B00DE4FC2 /* board.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D7D1F31BB89A2B00DE4FC2 /* board.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		70D7D1D91BB8975700DE4FC2 /* tic tac toeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tic tac toeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D7D1DD1BB8975700DE4FC2 /* tic_tac_toeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tic_tac_toeUITests.swift; sourceTree = "<group>"; };
 		70D7D1DF1BB8975700DE4FC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70D7D1EB1BB899AD00DE4FC2 /* black-cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black-cross.png"; sourceTree = "<group>"; };
+		70D7D1EC1BB899AD00DE4FC2 /* black-nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "black-nought.png"; sourceTree = "<group>"; };
+		70D7D1ED1BB899AD00DE4FC2 /* white-cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-cross.png"; sourceTree = "<group>"; };
+		70D7D1EE1BB899AD00DE4FC2 /* white-nought.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "white-nought.png"; sourceTree = "<group>"; };
+		70D7D1F31BB89A2B00DE4FC2 /* board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = board.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,11 @@
 		70D7D1B11BB8975700DE4FC2 = {
 			isa = PBXGroup;
 			children = (
+				70D7D1EB1BB899AD00DE4FC2 /* black-cross.png */,
+				70D7D1EC1BB899AD00DE4FC2 /* black-nought.png */,
+				70D7D1ED1BB899AD00DE4FC2 /* white-cross.png */,
+				70D7D1F31BB89A2B00DE4FC2 /* board.png */,
+				70D7D1EE1BB899AD00DE4FC2 /* white-nought.png */,
 				70D7D1BC1BB8975700DE4FC2 /* tic tac toe */,
 				70D7D1D11BB8975700DE4FC2 /* tic tac toeTests */,
 				70D7D1DC1BB8975700DE4FC2 /* tic tac toeUITests */,
@@ -228,8 +243,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70D7D1F21BB899AD00DE4FC2 /* white-nought.png in Resources */,
+				70D7D1F11BB899AD00DE4FC2 /* white-cross.png in Resources */,
 				70D7D1C81BB8975700DE4FC2 /* LaunchScreen.storyboard in Resources */,
 				70D7D1C51BB8975700DE4FC2 /* Assets.xcassets in Resources */,
+				70D7D1F41BB89A2B00DE4FC2 /* board.png in Resources */,
+				70D7D1F01BB899AD00DE4FC2 /* black-nought.png in Resources */,
+				70D7D1EF1BB899AD00DE4FC2 /* black-cross.png in Resources */,
 				70D7D1C31BB8975700DE4FC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

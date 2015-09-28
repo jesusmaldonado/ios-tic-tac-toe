@@ -1,25 +1,131 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tic_tac_toe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="8gE-JD-fCN">
+                                <rect key="frame" x="-0.5" y="161" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8gE-JD-fCN" secondAttribute="height" multiplier="1:1" id="UPg-A0-aaX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8I-Ux-19r" userLabel="bottom left">
+                                <rect key="frame" x="20" y="430" width="124" height="124.5"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYO-bQ-wxI" userLabel="bottom center">
+                                <rect key="frame" x="144" y="430" width="124.5" height="124.5"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwA-qr-YVz" userLabel="bottom right">
+                                <rect key="frame" x="268.5" y="430" width="124" height="124.5"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDO-VB-UDj" userLabel="center left">
+                                <rect key="frame" x="20" y="306" width="124" height="124"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fD1-FQ-9T6" userLabel="center center">
+                                <rect key="frame" x="144" y="306" width="124.5" height="124"/>
+                                <color key="backgroundColor" red="0.1199243255" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIK-nG-cNG" userLabel="center right">
+                                <rect key="frame" x="268.5" y="306" width="124" height="124"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhC-XA-gFr" userLabel="top left">
+                                <rect key="frame" x="20" y="181.5" width="124" height="124.5"/>
+                                <color key="backgroundColor" red="0.22975081929999999" green="0.44819148440000001" blue="0.46283143939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apo-GP-ZKt" userLabel="top center">
+                                <rect key="frame" x="144" y="181.5" width="124.5" height="124.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8M6-tv-Y4X" userLabel="top right">
+                                <rect key="frame" x="268.5" y="181.5" width="124" height="124.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="leading" secondItem="sDO-VB-UDj" secondAttribute="trailing" id="3s2-49-o8A"/>
+                            <constraint firstItem="ZwA-qr-YVz" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="63d-J6-PuU"/>
+                            <constraint firstItem="aIK-nG-cNG" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="7d9-Cf-N66"/>
+                            <constraint firstItem="aIK-nG-cNG" firstAttribute="centerX" secondItem="8M6-tv-Y4X" secondAttribute="centerX" id="7dN-p1-9lH"/>
+                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="width" secondItem="8gE-JD-fCN" secondAttribute="width" multiplier="0.3" id="8C1-oS-TDB"/>
+                            <constraint firstItem="OYO-bQ-wxI" firstAttribute="leading" secondItem="r8I-Ux-19r" secondAttribute="trailing" id="BWr-Of-pJq"/>
+                            <constraint firstItem="ZwA-qr-YVz" firstAttribute="centerY" secondItem="r8I-Ux-19r" secondAttribute="centerY" id="FtE-G1-eTS"/>
+                            <constraint firstItem="8gE-JD-fCN" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" id="IZZ-mQ-nuF"/>
+                            <constraint firstItem="r8I-Ux-19r" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="Jvb-Rf-llY"/>
+                            <constraint firstItem="aIK-nG-cNG" firstAttribute="centerY" secondItem="sDO-VB-UDj" secondAttribute="centerY" id="Mv9-19-mfW"/>
+                            <constraint firstItem="UhC-XA-gFr" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="Mwx-wH-gMM"/>
+                            <constraint firstItem="apo-GP-ZKt" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="Pvf-r2-ZdH"/>
+                            <constraint firstItem="aIK-nG-cNG" firstAttribute="leading" secondItem="fD1-FQ-9T6" secondAttribute="trailing" id="Qe5-d3-g95"/>
+                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="centerY" secondItem="8gE-JD-fCN" secondAttribute="centerY" id="SCs-9S-qdH"/>
+                            <constraint firstItem="8gE-JD-fCN" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" id="UJn-AM-3Iz"/>
+                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="height" secondItem="8gE-JD-fCN" secondAttribute="height" multiplier="0.3" id="a53-kN-tfM"/>
+                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="centerY" secondItem="sDO-VB-UDj" secondAttribute="centerY" id="aAb-De-uGe"/>
+                            <constraint firstItem="sDO-VB-UDj" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="ar8-CV-qcK"/>
+                            <constraint firstItem="OYO-bQ-wxI" firstAttribute="centerX" secondItem="apo-GP-ZKt" secondAttribute="centerX" id="b0W-aG-b8I"/>
+                            <constraint firstItem="8gE-JD-fCN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b9z-8J-KSo"/>
+                            <constraint firstItem="r8I-Ux-19r" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="bGe-MK-3aW"/>
+                            <constraint firstItem="apo-GP-ZKt" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="bqV-C3-pLT"/>
+                            <constraint firstItem="r8I-Ux-19r" firstAttribute="top" secondItem="sDO-VB-UDj" secondAttribute="bottom" id="cYY-6h-fIp"/>
+                            <constraint firstItem="aIK-nG-cNG" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="cxX-hn-ENV"/>
+                            <constraint firstItem="8gE-JD-fCN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="doD-z8-Eq9"/>
+                            <constraint firstItem="OYO-bQ-wxI" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="eSL-TL-4pp"/>
+                            <constraint firstItem="OYO-bQ-wxI" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="fHb-Uw-Uf8"/>
+                            <constraint firstItem="apo-GP-ZKt" firstAttribute="centerY" secondItem="UhC-XA-gFr" secondAttribute="centerY" id="hi2-eD-vgY"/>
+                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="centerX" secondItem="8gE-JD-fCN" secondAttribute="centerX" id="iGQ-dx-Cq4"/>
+                            <constraint firstItem="apo-GP-ZKt" firstAttribute="leading" secondItem="UhC-XA-gFr" secondAttribute="trailing" id="il3-iA-bou"/>
+                            <constraint firstItem="8M6-tv-Y4X" firstAttribute="centerY" secondItem="UhC-XA-gFr" secondAttribute="centerY" id="kwr-Wg-KXn"/>
+                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="centerX" secondItem="apo-GP-ZKt" secondAttribute="centerX" id="lzT-Yh-bqp"/>
+                            <constraint firstItem="ZwA-qr-YVz" firstAttribute="centerX" secondItem="8M6-tv-Y4X" secondAttribute="centerX" id="oOQ-l2-dDl"/>
+                            <constraint firstItem="8M6-tv-Y4X" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="pQ7-L9-onZ"/>
+                            <constraint firstItem="8M6-tv-Y4X" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="qNP-NW-6aw"/>
+                            <constraint firstItem="sDO-VB-UDj" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="qzA-Eg-QXh"/>
+                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="top" secondItem="apo-GP-ZKt" secondAttribute="bottom" id="sre-m1-SF0"/>
+                            <constraint firstItem="OYO-bQ-wxI" firstAttribute="centerY" secondItem="r8I-Ux-19r" secondAttribute="centerY" id="tGj-Rs-o68"/>
+                            <constraint firstItem="ZwA-qr-YVz" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="v4u-sQ-X0J"/>
+                            <constraint firstItem="OYO-bQ-wxI" firstAttribute="top" secondItem="fD1-FQ-9T6" secondAttribute="bottom" id="wdc-qM-5oM"/>
+                            <constraint firstItem="UhC-XA-gFr" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="yZh-la-cyP"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="440" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="board.png" width="512" height="512"/>
+    </resources>
 </document>
