@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4ap-Yc-QQy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -15,35 +16,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="8gE-JD-fCN">
-                                <rect key="frame" x="-0.5" y="161" width="414" height="414"/>
+                                <rect key="frame" x="44" y="44" width="512" height="512"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8gE-JD-fCN" secondAttribute="height" multiplier="1:1" id="UPg-A0-aaX"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYO-bQ-wxI" userLabel="bottom center">
-                                <rect key="frame" x="144" y="430" width="124.5" height="124.5"/>
-                                <state key="normal" title="Button"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="xpos">
-                                        <integer key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="ypos">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="marked" value="NO"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XCf-s4-xIV"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDO-VB-UDj" userLabel="center left">
-                                <rect key="frame" x="20" y="306" width="124" height="124"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="67" y="225" width="149" height="149"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="xpos">
                                         <integer key="value" value="1"/>
@@ -59,8 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIK-nG-cNG" userLabel="center right">
-                                <rect key="frame" x="268" y="306" width="124" height="124"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="385" y="225" width="149" height="149"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="xpos">
@@ -76,8 +58,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhC-XA-gFr" userLabel="top left">
-                                <rect key="frame" x="20" y="181" width="124" height="124.5"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="66" y="66" width="150" height="149"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="marked" value="NO"/>
@@ -92,9 +73,8 @@
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4j-5C-ItB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8M6-tv-Y4X" userLabel="top right">
-                                <rect key="frame" x="268" y="181" width="124" height="124.5"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apo-GP-ZKt" userLabel="top center">
+                                <rect key="frame" x="226" y="66" width="149" height="149"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="marked" value="NO"/>
@@ -102,16 +82,15 @@
                                         <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="ypos">
-                                        <integer key="value" value="2"/>
+                                        <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XcW-Sz-ssB"/>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="77M-6O-yJL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fD1-FQ-9T6" userLabel="center center">
-                                <rect key="frame" x="144" y="306" width="124.5" height="124"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="226" y="225" width="149" height="149"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="marked" value="NO"/>
@@ -127,8 +106,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwA-qr-YVz" userLabel="bottom right">
-                                <rect key="frame" x="268" y="430" width="124" height="124.5"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="385" y="384" width="149" height="149"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="xpos">
@@ -144,8 +122,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8I-Ux-19r" userLabel="bottom left">
-                                <rect key="frame" x="20" y="430" width="124" height="124.5"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="67" y="384" width="149" height="149"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="xpos">
@@ -160,9 +137,24 @@
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mR3-2d-ra9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apo-GP-ZKt" userLabel="top center">
-                                <rect key="frame" x="144" y="181" width="124.5" height="124.5"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYO-bQ-wxI" userLabel="bottom center">
+                                <rect key="frame" x="226" y="384" width="149" height="149"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="xpos">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ypos">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="marked" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XCf-s4-xIV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8M6-tv-Y4X" userLabel="top right">
+                                <rect key="frame" x="385" y="66" width="149" height="149"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="playerStatus" value="&quot;none&quot;"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="marked" value="NO"/>
@@ -170,64 +162,127 @@
                                         <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="ypos">
-                                        <integer key="value" value="1"/>
+                                        <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="77M-6O-yJL"/>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XcW-Sz-ssB"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="leading" secondItem="sDO-VB-UDj" secondAttribute="trailing" id="3s2-49-o8A"/>
                             <constraint firstItem="ZwA-qr-YVz" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="63d-J6-PuU"/>
                             <constraint firstItem="aIK-nG-cNG" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="7d9-Cf-N66"/>
                             <constraint firstItem="aIK-nG-cNG" firstAttribute="centerX" secondItem="8M6-tv-Y4X" secondAttribute="centerX" id="7dN-p1-9lH"/>
-                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="width" secondItem="8gE-JD-fCN" secondAttribute="width" multiplier="0.3" id="8C1-oS-TDB"/>
-                            <constraint firstItem="OYO-bQ-wxI" firstAttribute="leading" secondItem="r8I-Ux-19r" secondAttribute="trailing" id="BWr-Of-pJq"/>
+                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="width" secondItem="8gE-JD-fCN" secondAttribute="width" multiplier="0.29" id="8C1-oS-TDB"/>
+                            <constraint firstItem="OYO-bQ-wxI" firstAttribute="top" secondItem="fD1-FQ-9T6" secondAttribute="bottom" constant="10" id="Cem-tU-rfd"/>
                             <constraint firstItem="ZwA-qr-YVz" firstAttribute="centerY" secondItem="r8I-Ux-19r" secondAttribute="centerY" id="FtE-G1-eTS"/>
                             <constraint firstItem="8gE-JD-fCN" firstAttribute="width" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="width" id="IZZ-mQ-nuF"/>
                             <constraint firstItem="r8I-Ux-19r" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="Jvb-Rf-llY"/>
                             <constraint firstItem="aIK-nG-cNG" firstAttribute="centerY" secondItem="sDO-VB-UDj" secondAttribute="centerY" id="Mv9-19-mfW"/>
                             <constraint firstItem="UhC-XA-gFr" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="Mwx-wH-gMM"/>
                             <constraint firstItem="apo-GP-ZKt" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="Pvf-r2-ZdH"/>
-                            <constraint firstItem="aIK-nG-cNG" firstAttribute="leading" secondItem="fD1-FQ-9T6" secondAttribute="trailing" id="Qe5-d3-g95"/>
+                            <constraint firstItem="ZwA-qr-YVz" firstAttribute="leading" secondItem="OYO-bQ-wxI" secondAttribute="trailing" constant="10" id="RJP-uu-sUk"/>
+                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="top" secondItem="apo-GP-ZKt" secondAttribute="bottom" constant="10" id="RsD-Fd-1Ph"/>
                             <constraint firstItem="fD1-FQ-9T6" firstAttribute="centerY" secondItem="8gE-JD-fCN" secondAttribute="centerY" id="SCs-9S-qdH"/>
+                            <constraint firstItem="aIK-nG-cNG" firstAttribute="leading" secondItem="fD1-FQ-9T6" secondAttribute="trailing" constant="10" id="SLa-8o-0H0"/>
                             <constraint firstItem="8gE-JD-fCN" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" id="UJn-AM-3Iz"/>
-                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="height" secondItem="8gE-JD-fCN" secondAttribute="height" multiplier="0.3" id="a53-kN-tfM"/>
+                            <constraint firstItem="r8I-Ux-19r" firstAttribute="top" secondItem="sDO-VB-UDj" secondAttribute="bottom" constant="10" id="ZML-Wo-n0x"/>
+                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="height" secondItem="8gE-JD-fCN" secondAttribute="height" multiplier="0.29" id="a53-kN-tfM"/>
                             <constraint firstItem="fD1-FQ-9T6" firstAttribute="centerY" secondItem="sDO-VB-UDj" secondAttribute="centerY" id="aAb-De-uGe"/>
                             <constraint firstItem="sDO-VB-UDj" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="ar8-CV-qcK"/>
                             <constraint firstItem="OYO-bQ-wxI" firstAttribute="centerX" secondItem="apo-GP-ZKt" secondAttribute="centerX" id="b0W-aG-b8I"/>
                             <constraint firstItem="8gE-JD-fCN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b9z-8J-KSo"/>
                             <constraint firstItem="r8I-Ux-19r" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="bGe-MK-3aW"/>
                             <constraint firstItem="apo-GP-ZKt" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="bqV-C3-pLT"/>
-                            <constraint firstItem="r8I-Ux-19r" firstAttribute="top" secondItem="sDO-VB-UDj" secondAttribute="bottom" id="cYY-6h-fIp"/>
                             <constraint firstItem="aIK-nG-cNG" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="cxX-hn-ENV"/>
                             <constraint firstItem="8gE-JD-fCN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="doD-z8-Eq9"/>
                             <constraint firstItem="OYO-bQ-wxI" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="eSL-TL-4pp"/>
                             <constraint firstItem="OYO-bQ-wxI" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="fHb-Uw-Uf8"/>
                             <constraint firstItem="apo-GP-ZKt" firstAttribute="centerY" secondItem="UhC-XA-gFr" secondAttribute="centerY" id="hi2-eD-vgY"/>
                             <constraint firstItem="fD1-FQ-9T6" firstAttribute="centerX" secondItem="8gE-JD-fCN" secondAttribute="centerX" id="iGQ-dx-Cq4"/>
-                            <constraint firstItem="apo-GP-ZKt" firstAttribute="leading" secondItem="UhC-XA-gFr" secondAttribute="trailing" id="il3-iA-bou"/>
+                            <constraint firstItem="apo-GP-ZKt" firstAttribute="leading" secondItem="UhC-XA-gFr" secondAttribute="trailing" constant="10" id="k3H-Za-Zmk"/>
                             <constraint firstItem="8M6-tv-Y4X" firstAttribute="centerY" secondItem="UhC-XA-gFr" secondAttribute="centerY" id="kwr-Wg-KXn"/>
                             <constraint firstItem="fD1-FQ-9T6" firstAttribute="centerX" secondItem="apo-GP-ZKt" secondAttribute="centerX" id="lzT-Yh-bqp"/>
                             <constraint firstItem="ZwA-qr-YVz" firstAttribute="centerX" secondItem="8M6-tv-Y4X" secondAttribute="centerX" id="oOQ-l2-dDl"/>
                             <constraint firstItem="8M6-tv-Y4X" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="pQ7-L9-onZ"/>
                             <constraint firstItem="8M6-tv-Y4X" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="qNP-NW-6aw"/>
                             <constraint firstItem="sDO-VB-UDj" firstAttribute="height" secondItem="fD1-FQ-9T6" secondAttribute="height" id="qzA-Eg-QXh"/>
-                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="top" secondItem="apo-GP-ZKt" secondAttribute="bottom" id="sre-m1-SF0"/>
+                            <constraint firstItem="OYO-bQ-wxI" firstAttribute="leading" secondItem="r8I-Ux-19r" secondAttribute="trailing" constant="10" id="rJY-Uw-3Ue"/>
+                            <constraint firstItem="sDO-VB-UDj" firstAttribute="top" secondItem="UhC-XA-gFr" secondAttribute="bottom" constant="10" id="sRG-kY-tfP"/>
                             <constraint firstItem="OYO-bQ-wxI" firstAttribute="centerY" secondItem="r8I-Ux-19r" secondAttribute="centerY" id="tGj-Rs-o68"/>
                             <constraint firstItem="ZwA-qr-YVz" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="v4u-sQ-X0J"/>
-                            <constraint firstItem="OYO-bQ-wxI" firstAttribute="top" secondItem="fD1-FQ-9T6" secondAttribute="bottom" id="wdc-qM-5oM"/>
-                            <constraint firstItem="UhC-XA-gFr" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" id="yZh-la-cyP"/>
+                            <constraint firstItem="fD1-FQ-9T6" firstAttribute="leading" secondItem="sDO-VB-UDj" secondAttribute="trailing" constant="10" id="xEb-2I-6nk"/>
+                            <constraint firstItem="UhC-XA-gFr" firstAttribute="width" secondItem="fD1-FQ-9T6" secondAttribute="width" constant="1" id="yZh-la-cyP"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="440" y="429"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="1b0-7J-KM8">
+            <objects>
+                <viewController id="4ap-Yc-QQy" userLabel="Second View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vnx-lp-r6f"/>
+                        <viewControllerLayoutGuide type="bottom" id="NY3-IJ-iSb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6QR-HE-bid">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Tic-Tac-Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cx-fl-rht">
+                                <rect key="frame" x="175" y="113" width="250" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbi-Vg-7gc">
+                                <rect key="frame" x="251" y="515" width="98" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Play"/>
+                                <state key="disabled" title="Choose a side to play"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="iaM-Nb-QII"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQP-am-aWf">
+                                <rect key="frame" x="175" y="317" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="2fX-Ex-PK2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="T6o-Ai-bb8"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3w-Fv-bGz">
+                                <rect key="frame" x="364.5" y="317" width="60" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sQP-am-aWf" firstAttribute="leading" secondItem="6cx-fl-rht" secondAttribute="leading" id="89G-sR-z5n"/>
+                            <constraint firstItem="hbi-Vg-7gc" firstAttribute="centerX" secondItem="6QR-HE-bid" secondAttribute="centerX" id="9DY-1M-2lh"/>
+                            <constraint firstItem="U3w-Fv-bGz" firstAttribute="top" secondItem="6cx-fl-rht" secondAttribute="bottom" constant="174" id="J07-HN-NNM"/>
+                            <constraint firstItem="hbi-Vg-7gc" firstAttribute="leading" secondItem="6QR-HE-bid" secondAttribute="leadingMargin" constant="231" id="LUP-ab-7DA"/>
+                            <constraint firstItem="NY3-IJ-iSb" firstAttribute="top" secondItem="sQP-am-aWf" secondAttribute="bottom" constant="223" id="Nqs-yo-FXy"/>
+                            <constraint firstItem="U3w-Fv-bGz" firstAttribute="height" secondItem="sQP-am-aWf" secondAttribute="height" id="and-bF-04Z"/>
+                            <constraint firstItem="NY3-IJ-iSb" firstAttribute="top" secondItem="hbi-Vg-7gc" secondAttribute="bottom" constant="47" id="bJF-BG-97U"/>
+                            <constraint firstItem="6cx-fl-rht" firstAttribute="centerX" secondItem="6QR-HE-bid" secondAttribute="centerX" id="cGL-UP-STh"/>
+                            <constraint firstItem="U3w-Fv-bGz" firstAttribute="width" secondItem="sQP-am-aWf" secondAttribute="width" id="gJY-JT-D4u"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hbi-Vg-7gc" secondAttribute="trailing" constant="231" id="mG4-zB-wI2"/>
+                            <constraint firstItem="U3w-Fv-bGz" firstAttribute="trailing" secondItem="6cx-fl-rht" secondAttribute="trailing" id="sIx-6n-0mQ"/>
+                            <constraint firstItem="NY3-IJ-iSb" firstAttribute="top" secondItem="U3w-Fv-bGz" secondAttribute="bottom" constant="223" id="zxU-j6-uCe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRE-JP-47v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-307" y="429"/>
         </scene>
     </scenes>
     <resources>
