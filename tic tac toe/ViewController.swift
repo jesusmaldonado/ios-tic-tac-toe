@@ -63,21 +63,6 @@ extension UIButton {
             }
         }
     }
-    var playerStatus: NSString? {
-        get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.PlayerStatus) as? NSString
-        }
-        set {
-            if let newValue = newValue {
-                objc_setAssociatedObject(
-                    self,
-                    &AssociatedKeys.PlayerStatus,
-                    newValue as NSString?,
-                    objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC
-                )
-            }
-        }
-    }
 }
 
 class ViewController: UIViewController {

@@ -1,10 +1,9 @@
 # tic tac toe
 
-Uses animations and layout constraints to overlay buttons over a tic-tac-toe game. :)
+Tic-tac-toe
 
 ### Tech
 
-* UIImageView
-* NSTimer
-* UIControlState
+* UIView Animations to Ensure Transition between Objects
+* Utilizes custom run-time defined attributes extended using an 
 
